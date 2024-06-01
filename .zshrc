@@ -82,3 +82,6 @@ alias c='clear'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+export LC_ALL=en_IN.UTF-8
+export LANG=en_IN.UTF-8
