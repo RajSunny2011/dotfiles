@@ -3,9 +3,9 @@ export LC_ALL=en_IN.UTF-8
 export LANG=en_IN.UTF-8
 
 # Start tmus before anything
-if [ "$TMUX" = "" ]; then
-  tmux;
-fi
+# if [ "$TMUX" = "" ]; then
+  # tmux;
+# fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -91,3 +91,5 @@ alias c='clear'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+pyenv init
