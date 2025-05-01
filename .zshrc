@@ -90,3 +90,4 @@ eval "$(zoxide init --cmd cd zsh)"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+export DISPLAY=$(grep nameserver /etc/resolv.conf | awk '{print $2}'):0
