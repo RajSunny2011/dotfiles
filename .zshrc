@@ -47,16 +47,9 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-# WSL: hide Windows executables from completions
-zstyle ':completion:*' ignored-patterns '*.exe' '*.dll' '*.bat' '*.cmd'
-zstyle ':completion:*:commands' ignored-patterns '*.exe' '*.dll'
-
 # Aliases
 alias ls='ls --color'
 alias vim='nvim'
-# Autocompletion pacman search and install with fzf
-alias pi="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
-
 
 # Shell integrations
 eval "$(fzf --zsh)"
